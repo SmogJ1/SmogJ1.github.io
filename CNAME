@@ -1,1 +1,3 @@
-lftmsolar.42web.io
+Name: lftmsolar (or the subdomain you want to use)
+Type: CNAME
+Value: smogj1.github.io

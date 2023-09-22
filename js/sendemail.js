@@ -6,7 +6,7 @@ function sendEmail(name, email, subject, message) {
     fetch('https://api.sendgrid.com/v3/mail/send', {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${sendGridAPIKey}`,
+            'Authorization': `Bearer ${apiKey}`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({

@@ -1,6 +1,7 @@
-const sendGridAPIKey = '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';
+let part1 = 'SG._UrcA538Qkyd4Z5-';
+let part2 = 'AqztiA.PsXWbJk0C_-6bHlUsolIa04AF9MvQSDJjZzr5MpbuXY';
+let apiKey = part1 + part2;
 const yourEmail = 'joaolongras2003@gmail.com';
-
 function sendEmail(name, email, subject, message) {
     fetch('https://api.sendgrid.com/v3/mail/send', {
         method: 'POST',

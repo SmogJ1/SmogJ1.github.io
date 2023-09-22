@@ -1,5 +1,5 @@
 <?php 
-
+require_once(__DIR__ . '/comuncodes.php');
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <link rel="stylesheet" type="text/css" href="css/contact.css"/>
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
@@ -61,7 +61,7 @@
                 <a class="nav-link" href="service.html">Services</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="contact.php">Contact Us</a>
               </li>
             </ul>
             <div class="quote_btn-container">
@@ -77,8 +77,9 @@
   </div>
 
   <!-- contact section -->
-  
- 
+  <?php
+  drawContact();
+ ?>
 
   <!-- end contact section -->
 

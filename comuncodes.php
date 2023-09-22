@@ -1,7 +1,6 @@
 <?php
 
-function drawContact() {
-    $formHTML = '
+function drawContact() {?>
         <div id="contact-form">
             <form action="send_email.php" method="post">
                 <label for="contact-name">Nome:</label><br>
@@ -19,9 +18,8 @@ function drawContact() {
                 <input type="submit" value="Enviar" class="contact-submit">
             </form>
         </div>
-    ';
 
-    echo $formHTML;
-}
+        
+<?php }
 
 ?>

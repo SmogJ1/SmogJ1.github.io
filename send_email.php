@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     
-    $email_to = "seuemail@dominio.com";
+    $email_to = "joaolongras2003@gmail.com";
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-To: $email_from \r\n";
     
@@ -17,6 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     "Mensagem:\n$message\n";
     
     mail($email_to, $subject, $full_message, $headers);
-    header('Location: contact.html?success=1');
+    header('Location: contact.php?success=1');
 }
 ?>

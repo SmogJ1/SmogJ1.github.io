@@ -17,6 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     "Mensagem:\n$message\n";
     
     mail($email_to, $subject, $full_message, $headers);
-    header('Location: contact.php?success=1');
+    header('Location: contact.html?success=1');
 }
 ?>
